@@ -1,0 +1,23 @@
+{
+    "1":
+    {
+        "domain": "example1.com",
+        "hosts": ["@","www", "dev"], 
+        "password" :"Your DDns Password"   
+    },
+
+    "2": 
+    {
+        "domain": "example2.de",
+        "hosts": ["@","www", "dev"],
+        "password" :"c246e96f1ghr418f96814ea800fc7be1"  
+    },
+
+    "3": 
+    {
+        "domain": "example3.me",
+        "hosts": ["@","www", "dev"],
+        "password" :"c246e96f1c14678f96814ea800fc7be1"  
+    } 
+
+}
