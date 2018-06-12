@@ -14,7 +14,7 @@ Instruction:
                 "password" :"Your DDns Password"   
             },
 
-        "2": 
+            "2": 
             {
                 "domain": "example2.de",
                 "hosts": ["@","www", "dev"],
@@ -30,9 +30,14 @@ Instruction:
 
         }
 
-2. Change the Path in ipupdate.sh to your Path
+
+
+2. Change the Path in SimpleDnsUpdate_Namecheap/ipupdate.sh to your Path:
+
 
 node /home/YOUR_PC_USERNAME/SimpleDnsUpdate_Namecheap/ipupdate.js > /home/YOUR_PC_USERNAME/SimpleDnsUpdate_Namecheap/cron.log
+
+
 
 3. Create a Cronjob on your host PC
 
