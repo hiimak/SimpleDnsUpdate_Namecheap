@@ -1,5 +1,7 @@
 # SimpleDnsUpdate_Namecheap
 
+Requirements: Nodejs mus be installed on your Host Pc
+
 A simple way to update the A + DNS Record of several Namecheap domains.
 
 Instruction: 
