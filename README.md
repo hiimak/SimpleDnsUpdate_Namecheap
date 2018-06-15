@@ -40,7 +40,11 @@ Instruction:
 node /home/YOUR_PC_USERNAME/SimpleDnsUpdate_Namecheap/ipupdate.js > /home/YOUR_PC_USERNAME/SimpleDnsUpdate_Namecheap/cron.log
 
 
+3. Create a Cronjob on your host PC or execute it via Commandline
 
-3. Create a Cronjob on your host PC
-
+Example for Cronjob: 
 */10 * * * * bash /home/(YOUR_HOST_PC)/SimpleDnsUpdate_Namecheap/ipupdate.sh
+
+Execute via node: 
+
+node /home/(YOUR_HOST_PC)/SimpleDnsUpdate_Namecheap/ipupdate.js
