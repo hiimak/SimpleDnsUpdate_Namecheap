@@ -1,4 +1,4 @@
-# SimpleDnsUpdate_Namecheap
+# Update your DNS data on Namecheap with this small script
 
 Requirements: Nodejs must be installed on your Host Pc
 
