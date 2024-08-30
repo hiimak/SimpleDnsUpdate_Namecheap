@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: node-cron-app
+    volumes:
+      - ./ipupdate.js:/usr/src/app/ipupdate.js
+      - ./domains.json:/usr/src/app/domains.js
+      - ./logs:/var/log
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
