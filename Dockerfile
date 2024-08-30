@@ -4,7 +4,11 @@ FROM node:alpine
 # Set working directory
 WORKDIR /usr/src/app
 
-RUN apk add --no-cache bash curl tzdata \
+COPY package.json /usr/src/app/
+
+
+RUN npm install \
+    && apk add --no-cache bash curl tzdata \
     && apk add --no-cache --virtual .build-deps \
     && apk add --no-cache dcron \
     && cp /usr/share/zoneinfo/Etc/UTC /etc/localtime \

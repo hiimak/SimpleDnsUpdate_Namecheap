@@ -6,7 +6,7 @@ services:
     container_name: node-cron-app
     volumes:
       - ./ipupdate.js:/usr/src/app/ipupdate.js
-      - ./domains.json:/usr/src/app/domains.js
+      - ./domains.json:/usr/src/app/domains.json
       - ./logs:/var/log
     environment:
       - NODE_ENV=production

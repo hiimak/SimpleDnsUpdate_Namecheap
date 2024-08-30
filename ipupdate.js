@@ -2,6 +2,8 @@
 const https = require("https");
 const readline = require('readline');
 const domains= require('./domains.json');
+const xml2js = require('xml2js');
+
 
 const url = "https://api.ipify.org/?format=json";
 
@@ -58,8 +60,16 @@ function setIpAddresses(){
         
                 let tstamp = day + "." + month + "." + year +" - "+ hour + ":" + min ;
         
+                xml2js.parseString(body, (err, result) => {
+                  if (err) {
+                      throw err;
+                  }
+              
+                  if(result["interface-response"].Done && result["interface-response"].ErrCount)
+                    console.log("IP Update Successful, current ip: " + result["interface-response"].IP)
+                });
+
                 console.log('Timestamp: '+time+'\n');
-                console.log(body);
           });
           });
         }

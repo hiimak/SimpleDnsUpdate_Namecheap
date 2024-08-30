@@ -1,2 +1,142 @@
-.*
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*.sql
+*.sqlite3
+
+# Dependency directories #
+##########################
+node_modules/
+vendor/
+bower_components/
+
+# Build directories #
+#####################
+dist/
+build/
+out/
+tmp/
+temp/
+target/
+
+# Compiled source files #
+#########################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+
+# Java #
+########
+*.jar
+*.war
+*.ear
+*.class
+
+# Ruby #
+########
+*.gem
+*.rbc
+.rspec
+
+# Rust #
+########
+target/
+
+# Node #
+########
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables #
+#########################
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files #
+########################
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.bak
+*.orig
+
+# macOS Finder attributes #
+###########################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows #
+###########
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux #
+#########
+*~
+
+# Packaging #
+#############
+*.dmg
+*.exe
+*.iso
+*.jar
+*.tar.gz
+*.zip
+
+# Test results #
+################
+coverage/
+coverage-final.json
+.nyc_output/
+coverage.lcov
+lcov-report/
+
+# Temporary files #
+###################
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Minified files #
+##################
+*.min.js
+*.min.css
+
+# Static analysis #
+###################
+*.coverage
+.cache/
+pylint.log
+
+# Custom gitignore overrides #
+##############################
 !.gitignore
