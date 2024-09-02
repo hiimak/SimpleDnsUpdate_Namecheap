@@ -11,6 +11,11 @@ let ipAddress = "";
 
 getOwnIp();
 
+var interval = domains.updateInterval * 60000;
+setInterval(getOwnIp, interval);
+
+// Keep the Node.js process running
+setInterval(() => {}, 1000);
 function getOwnIp(){
   https.get(url, res => {
     res.setEncoding("utf8");
@@ -33,7 +38,7 @@ function setIpAddresses(){
   
   var result = "";
   for (var p in domains) {
-    if( domains.hasOwnProperty(p) ) {
+        if( domains.hasOwnProperty(p) && !p.includes("updateInterval")) {
        
         let domainName = domains[p].domain;
         let ddnsPswd = domains[p].password;
@@ -76,3 +81,4 @@ function setIpAddresses(){
       }
   } 
 }  
+
