@@ -15,12 +15,11 @@ RUN npm install \
     && echo "Etc/UTC" > /etc/timezone
 
 # Add a crontab file to the cron.d directory
-COPY mycron /etc/crontabs/root
 
 # Create the log file to be able to run tail
 RUN touch /var/log/cron.log
 
 # Command to start cron and keep the container running
-CMD ["node", "ipupdate.js", ">", "//var/log/cron.log" ]
+CMD ["node", "ipupdate.js", ">", "/var/log/cron.log" ]
 
 #CMD ["sh", "-c", "crond -f -l 2 && tail -f /var/log/cron.log"]
